@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-            success='{"Google ee appinde aishwaryam"}'
+            success='{"Success"}'
             list = []
             list.append(success)
             return success
