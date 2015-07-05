@@ -1,0 +1,61 @@
+
+http://localhost/api?username='username'&password='pass'
+
+
+
+select count(*) from staff where staffId=001 and password=000
+
+if count == 1
+
+UPDATE `staff` SET `authkey`='3488djw' WHERE staffId=001
+
+return {'3488djw'}
+
+http://localhost/attendance?authkey='secret'&class='classId'&hour='hourId'
+
+data here
+authkey
+
+http://localhost/attendance?authkey=''3488djw'&class='Class4'&hour='h4'
+
+
+select staffId from staff where authkey = secret;
+
+staffId returned
+
+Get hourId and ClassId
+Find day
+
+select count(*) from '$DAY' where  $hourId=$classID
+select count(*) from $MONDAY where  $h4='Class4' and U_ID=001
+
+if count ==1
+
+go ahead and update the attendance table
+
+INSERT INTO `api`.`attenadance` (`U_ID`, `class`, `hour`, `absentees`) VALUES ('001', 'class4', 'h4', '1#2#3#4#');
+
+
+query all elements in the database
+
+SELECT * FROM `attenadance` WHERE 1
+
+
+process all the rows seperately
+
+U_ID Class Hour Absentees
+
+update class1 SET h4=0 where roll=1 or roll = 2 or roll = 3; <---- Dynamically generate this string
+
+
+
+
+
+@end of the day
+
+select studentId from Class1 where h1 = 0 or h2 =0 or h3 =0 or h4 =0 or h5 = 0 or h6=0 or h7 =0
+
+returns studentId
+
+
+update studentRecord set absent = absent+1  where where studentId =

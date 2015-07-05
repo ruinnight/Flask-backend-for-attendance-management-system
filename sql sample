@@ -1,0 +1,23 @@
+import MySQLdb as mdb
+jid=[]
+try:
+  con = mdb.connect('localhost', 'root', 'toor', 'FR')
+  cur = con.cursor()
+  query ='select jid from registration'
+  cur.execute(query)
+  while True:
+              row = cur.fetchone()
+
+
+              if row == None:
+                 break
+              jid.append(row[0])
+except mdb.Error, e:
+    print "Error %d: %s" % (e.args[0],e.args[1])
+>>> while True:
+...    row = cur.fetchone()
+...    if row != None:
+...             print row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8]
+...    else:
+...     break
+...
